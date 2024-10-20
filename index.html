@@ -1,0 +1,630 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan Jaiswal</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/style.css" rel="stylesheet">
+    <script src="./src/tailwind.js"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between items-center p-5 bg-[#070A29] text-white ">
+        <div class="navbrand">
+            <a href="index.html"><img class="w-40" src="./src/images/logo.png" alt=""></a>
+        </div>
+        <div class="hidden lg:flex gap-12 Navbar">
+            <a class="font-medium" href="#home">Home</a>
+            <a class="font-medium" href="#about">About Us</a>
+            <a class="font-medium" href="#service">Services</a>
+            <a class="font-medium" href="#portfolio">Portfolio</a>
+            <a class="font-medium" href="#contact">Contact Us</a>
+        </div>
+        <a href="resume.pdf" download="" class="hidden lg:flex hire">Hire me</a>
+        <button class="toggle lg:hidden " onclick="toggleMenu()">
+            <span class="iconify text-4xl" data-icon="ri:menu-3-fill"></span>
+        </button>
+        <!-- ==============Mobile Menu ============ -->
+        <div class="fixed inset-0 bg-[#070A29] p-5 lg:hidden hidden z-50 h-[450px]" id="mobileMenu">
+            <div class="flex justify-between items-center">
+                <div class="navbrand">
+                    <a href="index.html"><img class="w-40" src="./src/images/logo.png" alt=""></a>
+                </div>
+                <button class="lg:hidden" onclick="toggleMenu()">
+                    <span class="iconify text-4xl" data-icon="line-md:menu-to-close-transition"></span>
+                </button>
+            </div>
+            <div class="flex flex-col pt-6 Navbar">
+                <a href="#home" class="font-medium py-3">Home</a>
+                <a href="#about" class="font-medium py-3">About Us</a>
+                <a href="#service" class="font-medium py-3">Services</a>
+                <a href="#portfolio" class="font-medium py-3">Portfolio</a>
+                <a href="#contact" class="font-medium py-3">Contact Us</a>
+                <a href="" class="hire">Hire me</a>
+
+            </div>
+            <div class="flex justify-between items-center gap-2 py-5">
+                <a href=""><span class="iconify text-4xl font-medium" data-icon="bi:github"></span></a>
+                <a href="">
+                    <span class="iconify text-4xl font-medium" data-icon="bi:linkedin"></span>
+                </a>
+                <a href="">
+                    <span class="iconify text-4xl font-medium" data-icon="bi:instagram"></span>
+                </a>
+                <a href="">
+                    <span class="iconify text-5xl font-medium" data-icon="vscode-icons:file-type-replit"></span>
+                </a>
+                <a href="">
+                    <span class="iconify text-5xl font-medium" data-icon="basil:medium-solid"></span>
+                </a>
+                <a href="">
+                    <span class="iconify text-4xl font-medium" data-icon="akar-icons:facebook-fill"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- =============Home Section============== -->
+    <section class="bg-gradient w-full overflow-hidden" id="home">
+        <div
+            class="max-w-[1440px] mx-auto flex flex-wrap flex-col md:flex-row justify-center items-center py-5 h-screen relative">
+            <div class="w-full md:w-1/2 py-5 text-center md:text-left p-8">
+                <h2 class="text-3xl font-bold text-gradient">Hi I'm,</h2>
+                <h1 class="text-white font-size-1">Kishan Jaiswal, <br>Unity <span class="text-gradient">&</span> Game
+                    Developer
+                </h1>
+                <p class="font-normal text-lg text-white pt-6">A Game and Unity Developer is a skilled
+                    professional
+                    responsible for
+                    creating interactive and
+                    immersive gaming experiences using Unity. </p>
+                <div class="pt-10">
+                    <a href=""
+                        class=" mt-5 hire px-14 py-4 hover:px-14 hover:py-4 outline-none text-xl hover:text-xl font-medium text-white">Hire
+                        me</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 py-5 flex justify-center">
+                <div class="w-full max-w-lg h-[550px] p-8 relative ">
+                    <img class="w-full h-full object-cover rounded-3xl z-50 animation-images"
+                        src="./src/images/banner.b41e8bd3384755f8ff18.png" alt="Kishan Jaiswal Banner">
+                    <div
+                        class="absolute xl:block lg:hidden hidden xl:-top-9 xl:left-14 lg:left-0 left-0 right-0 w-full h-[480px] bg-slate-100 -z-40 rounded-3xl animation-images">
+                    </div>
+                    <div
+                        class="absolute xl:block lg:hidden hidden -top-5 xl:left-8 lg:left-0 left-0 right-0 w-full h-[480px] bg-slate-200 -z-40 rounded-3xl animation-images">
+                    </div>
+                    <div
+                        class="absolute xl:block lg:hidden hidden top-2 xl:left-0 right-0 left-0 w-full h-[490px] bg-gray-300  -z-20 rounded-3xl animation-images">
+                    </div>
+                </div>
+            </div>
+            <h1
+                class="text-animation xl:block hidden absolute left-0 xl:-top-16 -top-10  right-0 lg:flex text-slate-400 z-10 opacity-15">
+                Kishan
+            </h1>
+        </div>
+    </section>
+    <!-- =================About Section=============== -->
+    <section class="about w-full py-8 md:py-16 overflow-hidden" id="about">
+        <div class="container mx-auto px-4 max-w-[1440px] flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 p-4 md:p-8">
+                <div class="relative flex flex-wrap justify-center lg:justify-start">
+                    <div class="w-full max-w-xs md:max-w-md h-[300px] md:h-[500px]">
+                        <img class="object-cover w-full h-full rounded-[40px] md:rounded-[50px]"
+                            src="./src/images/about-01.b2e3a8ef849333fdca05.png" alt="">
+                    </div>
+                    <div class="absolute -top-5 md:-top-10 left-0 md:-left-5 w-1/3 max-w-[120px] md:max-w-48 z-10">
+                        <img class="w-full h-full object-cover rounded-2xl md:rounded-3xl"
+                            src="./src/images/about-02.9e29e551e4812c4673e8.png" alt="">
+                    </div>
+                    <div
+                        class="absolute -bottom-5 md:-bottom-14 right-0 md:right-20 w-1/3 max-w-[150px] md:max-w-44 z-10">
+                        <img class="w-full h-full object-cover rounded-2xl md:rounded-3xl"
+                            src="./src/images/about-03.4dc3e6d50a17fbe3cf21.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div class="p-4 md:p-8">
+                    <div class="py-4 md:py-8">
+                        <span
+                            class="text-white rounded-full hover:rounded-full px-10 hover:px-10  py-2 text-sm md:text-lg font-normal hire inline-block transition-all duration-300 hover:bg-opacity-80">About
+                            me</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl xl:text-8xl font-bold text-gradient">About me</h2>
+                    <p class="text-sm md:text-base text-white font-light leading-6 md:leading-7 pt-3 md:pt-5">A Game and
+                        Unity Developer is a skilled professional responsible for creating interactive and immersive
+                        gaming experiences using Unity, a leading game development platform. These developers are
+                        proficient in C# programming, which is the primary language used in Unity, and have a strong
+                        understanding of game design principles, physics, and 3D/2D rendering. They work closely with
+                        designers, artists, and other developers to transform ideas into playable games that run on
+                        various platforms, such as mobile, PC, consoles, and VR/AR devices.</p>
+                    <div class="flex flex-wrap gap-2 md:gap-6 pt-3 md:pt-5 items-center">
+                        <a href="" class=" hire ">Download
+                            Resume</a>
+                        <a href="" class="text-white text-2xl md:text-3xl"><span class="iconify"
+                                data-icon="bi-github"></span></a>
+                        <a href="" class="text-white text-2xl md:text-3xl"><span class="iconify"
+                                data-icon="entypo-social:linkedin-with-circle"></span></a>
+                        <a href="" class="text-white text-3xl md:text-4xl"><span class="iconify"
+                                data-icon="vscode-icons:file-type-replit"></span></a>
+                        <a href="" class="text-white text-3xl md:text-4xl lg:block md:block hidden"><span
+                                class="iconify" data-icon="ri:instagram-fill"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== -->
+
+    <section class="portfolio py-16 w-full relative overflow-hidden" id="service">
+        <div class="text-center relative">
+            <span
+                class="text-white relative z-10 inline-block px-10 hover:rounded-full py-2 text-sm md:text-lg font-normal hire rounded-full hover:px-10 hover:py-2 transition-all duration-300">
+                Our Specialities
+            </span>
+            <h1
+                class="absolute md:block hidden -top-20 md:-top-48 lg:-top-52 opacity-10 z-0 left-0 right-0  text-slate-400 game">
+                game</h1>
+        </div>
+        <h2 class="text-4xl md:text-6xl lg:text-8xl py-5 text-center font-bold text-gradient">Our Specialities</h2>
+        <div class="container mx-auto px-4 pt-10 md:pt-20 lg:pt-32">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="speciality-box group">
+                    <img class="mx-auto w-16 h-16 md:w-20 md:h-20" src="./src/images/download.png"
+                        alt="Speciality Icon">
+                    <div class="text-center text-white opacity-40 mt-4">
+                        <h6 class="text-white pt-3">Unity Developer</h6>
+                        <p class="text-sm md:text-base font-light py-2">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <h2
+                            class="text-white opacity-5 text-4xl md:text-6xl transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                            01
+                        </h2>
+                    </div>
+                </div>
+                <div class="speciality-box group">
+                    <img class="mx-auto w-16 h-16 md:w-20 md:h-20" src="./src/images/download.png"
+                        alt="Speciality Icon">
+                    <div class="text-center text-white opacity-40 mt-4">
+                        <h6 class="text-white pt-3">Unity Developer</h6>
+                        <p class="text-sm md:text-base font-light py-2">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <h2
+                            class="text-white opacity-5 text-4xl md:text-6xl transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                            02
+                        </h2>
+                    </div>
+                </div>
+                <div class="speciality-box group">
+                    <img class="mx-auto w-16 h-16 md:w-20 md:h-20" src="./src/images/download.png"
+                        alt="Speciality Icon">
+                    <div class="text-center text-white opacity-40 mt-4">
+                        <h6 class="text-white pt-3">Unity Developer</h6>
+                        <p class="text-sm md:text-base font-light py-2">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <h2
+                            class="text-white opacity-5 text-4xl md:text-6xl transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                            03
+                        </h2>
+                    </div>
+                </div>
+                <div class="speciality-box group">
+                    <img class="mx-auto w-16 h-16 md:w-20 md:h-20" src="./src/images/download.png"
+                        alt="Speciality Icon">
+                    <div class="text-center text-white opacity-40 mt-4">
+                        <h6 class="text-white pt-3">Unity Developer</h6>
+                        <p class="text-sm md:text-base font-light py-2">Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.</p>
+                        <h2
+                            class="text-white opacity-5 text-4xl md:text-6xl transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                            04
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Resume=============== -->
+
+    <section class="resume py-10 overflow-hidden">
+        <div class="container mx-auto px-4 xl:px-0 max-w-[1440px]">
+            <div class="py-8 text-center">
+                <span
+                    class="text-white rounded-full hover:rounded-full px-10 hover:px-10  py-2 text-sm md:text-lg font-normal hire inline-block transition-all duration-300 hover:bg-opacity-80">Experience</span>
+                <h2 class="text-4xl sm:text-6xl xl:text-8xl font-bold text-gradient pt-4">My Experiences</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-6 xl:gap-6 xl:px-20 px-4">
+                <div class="resume-section">
+                    <div class="portfolio-box flex flex-col sm:flex-row gap-4 relative lg:my-3 my-6 group">
+                        <span
+                            class="absolute -top-4 py-1 left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 border font-normal rounded-full px-6 sm:px-10 text-gray-200 text-sm sm:text-base border-gray-300 duration-300 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-400 whitespace-nowrap">
+                            <h6>Step - 01</h6>
+                        </span>
+                        <div class="w-28 h-20 mx-auto sm:mx-0">
+                            <img src="./src/images/icon-1.f92d6716453648917140d0982c1235c8.svg" alt=""
+                                class="w-full h-full object-contain">
+                        </div>
+                        <div class="border-l border-gray-600 hidden sm:block"></div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-white text-xl font-normal py-1">Connect your wallet</h4>
+                            <p class="text-white text-sm mb-0 opacity-70">Suspendisse tristique neque a lorem placerat
+                                pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-box flex flex-col sm:flex-row gap-4 relative lg:my-3 my-6 group">
+                        <span
+                            class="absolute -top-4 py-1 left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 border font-normal rounded-full px-6 sm:px-10 text-gray-200 text-sm sm:text-base border-gray-300 duration-300 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-400 whitespace-nowrap">
+                            <h6>Step - 02</h6>
+                        </span>
+                        <div class="w-28 h-20 mx-auto sm:mx-0">
+                            <img src="./src/images/icon-2.d14354eb7e60d2f3c8ea5cd46c8c5bdc.svg" alt=""
+                                class="w-full h-full object-contain">
+                        </div>
+                        <div class="border-l border-gray-600 hidden sm:block"></div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-white text-xl font-normal py-1">Connect your wallet</h4>
+                            <p class="text-white text-sm mb-0 opacity-70">Suspendisse tristique neque a lorem placerat
+                                pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-box flex flex-col sm:flex-row gap-4 relative lg:my-3 my-6 group">
+                        <span
+                            class="absolute -top-4 py-1 left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 border font-normal rounded-full px-6 sm:px-10 text-gray-200 text-sm sm:text-base border-gray-300 duration-300 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-400 whitespace-nowrap">
+                            <h6>Step - 03</h6>
+                        </span>
+                        <div class="w-28 h-20 mx-auto sm:mx-0">
+                            <img src="./src/images/icon-3.0f1a333637c772f2ac2dc19dfe37278e.svg" alt=""
+                                class="w-full h-full object-contain">
+                        </div>
+                        <div class="border-l border-gray-600 hidden sm:block"></div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-white text-xl font-normal py-1">Connect your wallet</h4>
+                            <p class="text-white text-sm mb-0 opacity-70">Suspendisse tristique neque a lorem placerat
+                                pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-box flex flex-col sm:flex-row gap-4 relative lg:my-3 my-6 group">
+                        <span
+                            class="absolute -top-4 py-1 left-1/2 sm:left-8 transform -translate-x-1/2 sm:translate-x-0 border font-normal rounded-full px-6 sm:px-10 text-gray-200 text-sm sm:text-base border-gray-300 duration-300 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-400 whitespace-nowrap">
+                            <h6>Step - 04</h6>
+                        </span>
+                        <div class="w-28 h-20 mx-auto sm:mx-0">
+                            <img src="./src/images/icon-4.3362ae6a9dd4e1d14fd1400a55131ba0.svg" alt=""
+                                class="w-full h-full object-contain">
+                        </div>
+                        <div class="border-l border-gray-600 hidden sm:block"></div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-white text-xl font-normal py-1">Connect your wallet</h4>
+                            <p class="text-white text-sm mb-0 opacity-70">Suspendisse tristique neque a lorem placerat
+                                pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:max-w-2xl mx-auto w-full">
+                    <img class="w-full h-full object-cover" src="./src/images/portfolio.5c35beca2c37f3ee7eb9.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========Projects============= -->
+
+    <section class="resume py-8 md:py-10 overflow-hidden" id="portfolio">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:max-w-7xl">
+            <div class="pb-8 md:pb-12 text-center">
+                <span
+                    class="text-white rounded-full hover:rounded-full px-10 hover:px-10  py-2 text-sm md:text-lg font-normal hire inline-block transition-all duration-300 hover:bg-opacity-80">Our
+                    Projects</span>
+                <h2 class="text-4xl md:text-6xl xl:text-8xl font-bold text-gradient pt-4">Recent Projects</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+                <a href="https://unitydev831.itch.io/fruit-ninja-2d" target="_blank"
+                    class="video w-full h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px]">
+                    <video autoplay muted loop class="object-cover h-full w-full rounded-lg">
+                        <source src="./src/videos/1-1.mp4" type="video/mp4">
+                        <source src="./src/videos/1-1.ogg" type="video/ogg">
+                    </video>
+                </a>
+
+                <div class="text-white">
+                    <h2 class="text-2xl md:text-3xl xl:text-5xl leading-tight font-medium mb-2">Dynamic Particle Strips
+                        with Unity VFX Graph</h2>
+                    <h3 class="text-xl md:text-2xl xl:text-3xl font-medium text-white py-2">with Unity VFX Graph</h3>
+                    <p class="text-sm md:text-base mb-4">In this project, I developed an advanced particle strip system
+                        using Unity's Visual Effects (VFX) Graph tailored for High Definition Render Pipeline (HDRP).
+                        This system incorporates customizable properties such as position, velocity, and color to
+                        achieve dynamic and visually engaging effects. By utilizing key modules like Initial Velocity
+                        and Turbulence, I created complex particle behaviors that simulate natural movement and fluid
+                        dynamics.</p>
+                    <h4 class="text-xl md:text-2xl font-medium text-white pt-4 mb-2">Used Tools & Skills</h4>
+                    <ul class="list-disc list-inside text-sm md:text-base space-y-1 mb-6">
+                        <li>Unity development</li>
+                        <li>C# language</li>
+                        <li>C++ language</li>
+                        <li>Unreal Engine language</li>
+                        <li>Unity Engine</li>
+                    </ul>
+                    <a href="https://unitydev831.itch.io/fruit-ninja-2d" class="hire">Play
+                        game</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume py-8 md:py-10 overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+                <div class="text-white order-2 lg:order-1">
+                    <h2 class="text-2xl sm:text-3xl xl:text-5xl leading-tight font-medium mb-2">Dynamic Particle Strips
+                        with Unity VFX Graph</h2>
+                    <h3 class="text-xl sm:text-2xl xl:text-3xl font-medium text-white py-2">with Unity VFX Graph</h3>
+                    <p class="text-sm sm:text-base mb-4">In this project, I developed an advanced particle strip system
+                        using Unity's Visual Effects (VFX) Graph tailored for High Definition Render Pipeline (HDRP).
+                        This system incorporates customizable properties such as position, velocity, and color to
+                        achieve dynamic and visually engaging effects. By utilizing key modules like Initial Velocity
+                        and Turbulence, I created complex particle behaviors that simulate natural movement and fluid
+                        dynamics.</p>
+                    <h4 class="text-xl sm:text-2xl font-medium text-white pt-4 mb-2">Used Tools & Skills</h4>
+                    <ul class="list-disc list-inside text-sm sm:text-base space-y-1 mb-6">
+                        <li>Unity development</li>
+                        <li>C# language</li>
+                        <li>C++ language</li>
+                        <li>Unreal Engine language</li>
+                        <li>Unity Engine</li>
+                    </ul>
+                    <div class="pt-4">
+                        <a href="https://unitydev831.itch.io/instrument-master" class="hire">Play
+                            game</a>
+                    </div>
+                </div>
+
+                <a href="https://unitydev831.itch.io/instrument-master" target="_blank"
+                    class="video w-full h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] order-1 lg:order-2">
+                    <video autoplay muted loop class="object-cover h-full w-full rounded-lg">
+                        <source src="./src/videos/1-2.mp4" type="video/mp4">
+                        <source src="./src/videos/1-2.ogg" type="video/ogg">
+                    </video>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ================================== -->
+
+    <section class="projects_slider resume py-8 md:py-10 overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-7xl">
+            <div class="py-6 md:py-8 text-center">
+                <span
+                    class="text-white rounded-full hover:rounded-full px-6 hover:px-6  py-2 text-sm md:text-lg font-normal hire inline-block transition-all duration-300 hover:bg-opacity-80">Projects
+                    Collection</span>
+                <h2 class="text-4xl md:text-6xl xl:text-8xl font-bold text-gradient pt-4">Portfolio</h2>
+            </div>
+            <div class="slider_Container">
+                <div class="owl-carousel owl-theme">
+                    <!-- Project 1 -->
+                    <div
+                        class="item border hover:border-gray-200 duration-200 p-3 md:p-4 rounded-3xl border-slate-600 relative group overflow-hidden">
+                        <div class="w-full h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-3xl">
+                            <img class="object-cover h-full w-full rounded-3xl group-hover:scale-110 duration-1000 ease-in-out"
+                                src="./src/images/project-01.181d05636ae19882435d.png" alt="Project 1">
+                        </div>
+                        <div
+                            class="absolute bottom-4 opacity-0 left-0 right-0 flex py-2 justify-center bg-opacity-50 mx-3 md:mx-5 group-hover:bottom-8 group-hover:opacity-100 duration-500 ease-in-out rounded-lg backdrop-blur-3xl">
+                            <a href="#" class="text-white text-base md:text-lg font-medium">King of pirates</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="item border hover:border-gray-200 duration-200 p-3 md:p-4 rounded-3xl border-slate-600 relative group overflow-hidden">
+                        <div class="w-full h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-3xl">
+                            <img class="object-cover h-full w-full rounded-3xl group-hover:scale-110 duration-1000 ease-in-out"
+                                src="./src/images/project-02.e9c6cde09013c72c5dbd.png" alt="Project 2">
+                        </div>
+                        <div
+                            class="absolute bottom-4 opacity-0 left-0 right-0 flex py-2 justify-center bg-opacity-50 mx-3 md:mx-5 group-hover:bottom-8 group-hover:opacity-100 duration-500 ease-in-out rounded-lg backdrop-blur-3xl">
+                            <a href="#" class="text-white text-base md:text-lg font-medium">King of pirates</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="item border hover:border-gray-200 duration-200 p-3 md:p-4 rounded-3xl border-slate-600 relative group overflow-hidden">
+                        <div class="w-full h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-3xl">
+                            <img class="object-cover h-full w-full rounded-3xl group-hover:scale-110 duration-1000 ease-in-out"
+                                src="./src/images/project-03.1ce7109df0be2a58a2f3.png" alt="Project 3">
+                        </div>
+                        <div
+                            class="absolute bottom-4 opacity-0 left-0 right-0 flex py-2 justify-center bg-opacity-50 mx-3 md:mx-5 group-hover:bottom-8 group-hover:opacity-100 duration-500 ease-in-out rounded-lg backdrop-blur-3xl">
+                            <a href="#" class="text-white text-base md:text-lg font-medium">King of pirates</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div
+                        class="item border hover:border-gray-200 duration-200 p-3 md:p-4 rounded-3xl border-slate-600 relative group overflow-hidden">
+                        <div class="w-full h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-3xl">
+                            <img class="object-cover h-full w-full rounded-3xl group-hover:scale-110 duration-1000 ease-in-out"
+                                src="./src/images/project-04.6b898cba226dc2348f9f.png" alt="Project 4">
+                        </div>
+                        <div
+                            class="absolute bottom-4 opacity-0 left-0 right-0 flex py-2 justify-center bg-opacity-50 mx-3 md:mx-5 group-hover:bottom-8 group-hover:opacity-100 duration-500 ease-in-out rounded-lg backdrop-blur-3xl">
+                            <a href="#" class="text-white text-base md:text-lg font-medium">King of pirates</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div
+                        class="item border hover:border-gray-200 duration-200 p-3 md:p-4 rounded-3xl border-slate-600 relative group overflow-hidden">
+                        <div class="w-full h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden rounded-3xl">
+                            <img class="object-cover h-full w-full rounded-3xl group-hover:scale-110 duration-1000 ease-in-out"
+                                src="./src/images/project-05.c9468f210d1d62723c47.png" alt="Project 5">
+                        </div>
+                        <div
+                            class="absolute bottom-4 opacity-0 left-0 right-0 flex py-2 justify-center bg-opacity-50 mx-3 md:mx-5 group-hover:bottom-8 group-hover:opacity-100 duration-500 ease-in-out rounded-lg backdrop-blur-3xl">
+                            <a href="#" class="text-white text-base md:text-lg font-medium">King of pirates</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================== -->
+
+
+    <section class="newslatter py-12 overflow-hidden" id="contact">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 ">
+                <div class="lg:col-span-1">
+                    <div class="relative md:hidden lg:block block text-center h-64 sm:h-80 lg:h-full lg:pt-20">
+                        <div class="w-full absolute top-4 animate-1 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/lines-top.svg"
+                                alt="">
+                        </div>
+                        <div class="w-full absolute animate-2 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/single-line-top.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute top-5 animate-3 rotate-6 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/big-rectangle.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute top-7 w-full md:max-w-lg animate-4 rotate-12 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/big-rectangle.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute top-3 animate-5 rotate-45 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/small-rectangle.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute top-1 animate-6 rotate-90 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/big-circle.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute top-0 animate filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/small-circle.svg"
+                                alt="">
+                        </div>
+                        <div class="w-full absolute top-0 animate-8 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/single-line-bottom.svg"
+                                alt="">
+                        </div>
+                        <div class="w-full absolute -top-4 animate-9 filter-image">
+                            <img class="w-full"
+                                src="https://wonderkin.michael-aust.com/images/footer/illustration/lines-bottom.svg"
+                                alt="">
+                        </div>
+                        <div class="absolute w-full top-52 ">
+                            <h3 class="text-white font-medium text-4xl sm:text-5xl xl:text-6xl">नमस्ते :)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 md:py-0 py-6 lg:py-10">
+                    <form action="" class="relative">
+                        <h2 class="text-white font-semibold text-4xl sm:text-5xl lg:text-6xl xl:text-8xl pb-4 sm:pb-6">
+                            Leave a Comment!</h2>
+                        <div
+                            class="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full gap-4 sm:gap-5">
+                            <div class="mb-3 w-full">
+                                <label for="Name" class="text-white text-sm sm:text-base font-normal">Name</label>
+                                <input type="text" id="Name" placeholder="Name"
+                                    class="w-full py-2 mt-1 border border-gray-500 bg-transparent text-slate-300 font-light px-3 outline-none">
+                            </div>
+                            <div class="mb-3 w-full">
+                                <label for="Email" class="text-white text-sm sm:text-base font-normal">Email</label>
+                                <input type="email" id="Email" placeholder="Email"
+                                    class="w-full py-2 mt-1 border border-gray-500 bg-transparent text-slate-300 font-light px-3 outline-none">
+                            </div>
+                        </div>
+                        <div class="mb-3 w-full">
+                            <label for="Contact" class="text-white text-sm sm:text-base font-normal">Contact</label>
+                            <input type="tel" id="Contact" placeholder="Contact"
+                                class="w-full py-2 mt-1 border border-gray-500 bg-transparent text-slate-300 font-light px-3 outline-none">
+                        </div>
+                        <div class="mb-3 w-full">
+                            <label for="Message" class="text-white text-sm sm:text-base font-normal">Message</label>
+                            <textarea name="message" id="Message" cols="10" rows="5"
+                                class="w-full border mt-1 border-gray-500 py-1 bg-transparent text-slate-300 font-light px-3 outline-none"></textarea>
+                        </div>
+                        <button
+                            class="px-8 sm:px-12 py-2 sm:py-3 text-white border border-gray-500 hover:bg-white hover:text-black transition duration-300">Submit
+                            Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section resume py-4">
+        <div class="container mx-auto  px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 items-center xl:justify-between justify-between gap-4 pt-3">
+                <!-- Logo Section -->
+                <div class="navbrand text-center md:text-left">
+                    <div class="mb-2">
+                        <img class="mx-auto md:mx-0" src="./src/images/logo.png" alt="Logo">
+                    </div>
+                </div>
+
+                <!-- Navigation Links (hidden on small screens, visible on medium and larger) -->
+                <div class="navlink hidden lg:block">
+                    <ul class="flex justify-center md:justify-between gap-4 items-center text-white">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links Section -->
+                <div class="socialLink text-center md:text-right lg:col-span-1 md:col-span-2">
+                    <ul class="flex justify-center md:justify-end gap-4 items-center text-white">
+                        <li><a href="#"><span class="iconify text-2xl"
+                                    data-icon="entypo-social:linkedin-with-circle"></span></a></li>
+                        <li><a href="#"><span class="iconify text-2xl" data-icon="bi-github"></span></a></li>
+                        <li><a href="#"><span class="iconify text-2xl" data-icon="bi-instagram"></span></a></li>
+                        <li><a href="#"><span class="iconify text-2xl" data-icon="bi-facebook"></span></a></li>
+                        <li><a href="#"><span class="iconify text-3xl"
+                                    data-icon="vscode-icons:file-type-replit"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Copyright Text -->
+            <div class="pt-4 text-center">
+                <p class="text-white opacity-30 mb-0 text-sm">&copy; Developed by Pinku Rathour 2024</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="./src/custom.js"></script>
+
+</html>
